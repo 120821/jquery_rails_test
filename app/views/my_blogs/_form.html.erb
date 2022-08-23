@@ -1,0 +1,24 @@
+<%= form_for(@my_blog) do |f| %>
+
+  <table class='table table-striped table-hover table-bordered'>
+    <tr>
+      <th style="width: 150px;">
+        标题
+      </th>
+      <td>
+        <%= f.text_field :title, class: "form-control" %>
+      </td>
+    </tr>
+
+    <tr>
+      <th>
+        内容
+      </th>
+      <td>
+        <%= f.text_field :content , class: "form-control" %>
+      </td>
+    </tr>
+  </table>
+  <%= f.submit "确定", class: 'btn btn-primary btn-sm' %>
+<% end %>
+
