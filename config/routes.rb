@@ -9,4 +9,8 @@ Rails.application.routes.draw do
       get :test
     end
   end
+  resources :front_ends do
+    collection do
+    end
+  end
 end
