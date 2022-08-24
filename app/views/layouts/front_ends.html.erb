@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JqueryRailsTestRails</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+    <script src="https://files.sweetysoft.com/image_after_2022_08_24/4441/jquery.min.js"></script><!-- jQuery base library needed -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "front_ends", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag 'front_ends' %>
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

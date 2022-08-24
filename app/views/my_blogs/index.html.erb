@@ -10,10 +10,14 @@
   内容: <%= text_field_tag :my_blog_content, params[:my_blog_content] %>
   <%= submit_tag "查询", class: "form_submit", class: 'btn btn-secondary btn-sm'  %>
 <% end %>
-
+<h5>点击就会消失，jQuery hide </h5>
 <p>如果你点我，我就会消失。</p>
 <p>继续点我!</p>
 <p>接着点我!</p>
+
+<h5>按钮 点击就会消失或显示，jQuery hide </h5>
+<button id="hide">隐藏</button>
+<button id="show">显示</button>
 <table class="table table-striped table-bordered">
   <tr>
     <th style="width: 150px;">ID</th>
@@ -49,5 +53,12 @@
     $("p").click(function(){
       $(this).hide();
     });
+    $("#hide").click(function(){
+      $("p").hide();
+    });
+    $("#show").click(function(){
+      $("p").show();
+    });
   });
 </script>
+
